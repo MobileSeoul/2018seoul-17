@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/namefield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(이름)"
+                android:textColor="#514430"
+                android:textSize="36sp"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textColor="#514430"
+                android:textSize="20sp"
+                android:typeface="sans" />
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <TextView
+                android:id="@+id/addrfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="(주소)"
+                android:textColor="#514430"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영업시간"
+                android:textColor="#514430"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <TextView
+                android:id="@+id/timefield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="(영업시간)"
+                android:textColor="#514430"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전화번호"
+                android:textColor="#514430"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/numberfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:text="(전화번호)"
+                    android:textColor="#514430"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/call"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_call_black_24dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="소개"
+                android:textColor="#514430"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <TextView
+                android:id="@+id/introfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="(소개)"
+                android:textColor="#514430"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지역구"
+                android:textColor="#514430"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <TextView
+                android:id="@+id/regionfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="(지역구)"
+                android:textColor="#514430"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textColor="#514430"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <TextView
+                android:id="@+id/categoryfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="(카테고리)"
+                android:textColor="#514430"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="메뉴"
+                android:textColor="#514430"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+
+            <TextView
+                android:id="@+id/menufield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:text="(메뉴)"
+                android:textColor="#514430"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:outlineAmbientShadowColor="@android:color/holo_red_light"
+            android:outlineSpotShadowColor="@android:color/darker_gray"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="별점"
+                android:textColor="#413626"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bar" />
+            <TextView
+                android:id="@+id/tv01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:accessibilityHeading="false"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:isIndicator="false"
+                    android:layerType="software"
+                    android:max="6"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
